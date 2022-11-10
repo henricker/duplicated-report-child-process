@@ -1,7 +1,7 @@
 ## Create sub process to check if document csv has duplicated pokemons rows
 
 - We are using roundRobin algorithm to get subprocess and delegate responsabilities to search duplicated elements
-- Is an fact, if you need run something appear with this, using cluster 
+- Is an fact, if you need run something appear with this, use cluster or other confident lib
 - To make this, we're using child process library of nodejs core
 - To each row of csv the main process choose the next child process to seek duplicated row in the file
 
