@@ -13,8 +13,7 @@ const NUMBER_OF_PROCESSES = 5
 const replications = []
 for(let i = 0; i < NUMBER_OF_PROCESSES; i++) {
     const child = fork('./src/child-process.js', [databaseFile])
-    
-    child.send('hello')
+      
     child.on('exit', () => {
         console.log(`Process ${child.pid} exited`)
         process_running.delete(child.pid)
